@@ -1,0 +1,15 @@
+model Task{
+	id   		STRING		@id@default(autoincrement())
+	title		STRING
+	finished	BOOLEAN		@default(false)
+	occurrance  STRING[]
+}
+
+model Day{
+	id		STRING		@id @default(autoincrement())
+	date	DATETIME	@default(now())
+	tasks	Task[]
+	score	INT
+}
+
+// 77acbe00-4523-41ee-9302-beccc58a893c

@@ -15,16 +15,20 @@ export default function Email() {
       <Preview>Login Code for Commit</Preview>
       <Section style={main}>
         <Container style={container}>
-        
+
           <Img
-            src="https://i.pinimg.com/564x/26/82/78/2682787e9d8241a3164a67748ac505b6.jpg"
+            src="https://i.pinimg.com/564x/92/cf/32/92cf3206ae6e3b194dc556a7120f80e9.jpg"
             width="60"
             height="60"
             alt="Notion's Logo"
+            style={{
+              borderRadius: '22px',
+              overflow: 'hidden'
+            }}
           />
 
-          <Text style={h1}>commit</Text>
-          <Text style={h1}>log in code</Text>
+          <Text style={{...h1, marginTop: '32px'}}>commit</Text>
+          <Text style={{...h1, marginBottom: '32px'}}>log in code</Text>
 
           <Text style={{ ...text, marginBottom: '14px' }}>
             Your confirmation code is below - enter it in your open browser window and we'll help you get signed in.
@@ -71,7 +75,7 @@ const text = {
   color: '#3D4248',
   fontFamily:
     "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-  fontSize: '18px',
+  fontSize: '14px',
   margin: '36px 0',
 };
 
@@ -84,5 +88,6 @@ const code = {
   color: '#fff',
   letterSpacing: '12px',
   textAlign: 'center',
-  fontSize: '48px'
+  fontSize: '32px',
+  margin: '32px 0'
 };

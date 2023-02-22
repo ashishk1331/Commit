@@ -5,22 +5,23 @@ module.exports = {
 "./src/**/*.{js,ts,jsx,tsx}",
         ],
     theme: {
-        colors :{
-            primary: {
-                100: '#6CCF61',
-                200: '#51A44C',
-                300: '#2E6A37'
+        extend: {
+            colors :{
+                primary: {
+                    100: '#6CCF61',
+                    200: '#51A44C',
+                    300: '#2E6A37'
+                },
+                secondary: {
+                    100: '#3D4248',
+                    200: '#181B22',
+                    300: '#0D1015'
+                },
+                neutral: {
+                    100: '#FFFFFF'
+                }
             },
-            secondary: {
-                100: '#3D4248',
-                200: '#181B22',
-                300: '#0D1015'
-            },
-            neutral: {
-                100: '#FFFFFF'
-            }
         },
-        extend: {},
     },
     plugins: [],
 }

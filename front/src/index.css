@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+	font-family: 'Poppins', sans-serif;
+	@apply bg-secondary-300 text-neutral-100;
+}
+
+p{
+	@apply bg-[transparent];
+}
+
+h1{
+	@apply text-2xl font-medium;
+}
+
+input{
+	@apply w-full text-xl border-2 border-secondary-100 rounded-xl p-2 px-4;
+}
+
+.h-flex{
+	@apply flex items-center
+}
+
+.v-flex{
+	@apply flex flex-col items-center
+}
