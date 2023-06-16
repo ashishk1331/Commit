@@ -36,7 +36,6 @@ export default function LoginCode(props){
 						if(!error){
 							props.navigate('/app')
 						}
-						console.log(code, data, error)
 					}
 					props.dispatch({
 						type: 'SET_IS_LOADING'
